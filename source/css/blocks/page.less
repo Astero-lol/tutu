@@ -1,0 +1,22 @@
+.page {
+	position: relative;
+	overflow: hidden;
+
+	width: @contentSize;
+	padding: 0 10px;
+	margin: 0 auto;
+	min-width: 320px;
+	min-height: 100%;
+
+
+	@media @tablet {
+		width: 100%;
+
+		padding: 0 40px;
+		box-sizing: border-box;
+	}
+
+	@media @phone {
+		padding: 0 20px;
+	}
+}

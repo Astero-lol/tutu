@@ -1,0 +1,141 @@
+.form {
+	position: relative;
+	font-size: 0;
+
+	&__wrapper {
+		margin-right: -40px;
+
+		@media @tablet {
+			margin-right: -3%;
+		}
+
+		@media @vertical-tablet {
+			margin-right: -5%;
+		}
+
+		@media @phone {
+			margin-right: 0;
+		}
+	}
+
+	&__block {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: 230px;
+		margin: 0 40px 40px 0;
+
+		font-size: 14px;
+		
+		@media @tablet {
+			width: 30.3333%;
+			margin: 0 3% 3% 0;
+		}
+
+		@media @vertical-tablet {
+			width: 45%;
+			margin: 0 5% 5% 0;
+		}
+
+		@media @phone {
+			width: 70%;
+			display: block;
+		}
+
+		@media @vertical-phone {
+			width: 100%;
+			margin: 0 0 10% 0;
+		}
+
+		&_full {
+			width: 98%;
+			display: block;
+
+			@media @tablet {
+				width: 100%;
+			}
+
+			@media @phone {
+				width: 73%;
+				margin-bottom: 40px;
+			}
+
+			@media @vertical-phone {
+				width: 100%;
+			}
+		}
+	}
+
+	&__note {
+		position: absolute;
+		bottom: -25px;
+
+		color: @note-color;
+		font-size: 12px;
+	}
+
+	&__title {
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+
+	&__field {
+		width: 100%;
+		height: 25px;
+
+		display: block;
+		padding: 0;
+
+		text-indent: 5px;
+		font: inherit;
+
+		box-sizing: border-box;
+		outline: none;
+		box-shadow: none;
+		border: 1px solid @border-color;
+	}
+	
+	&__footer {
+		background-color: #f3f3f3;
+		padding: 20px 15px;
+
+		overflow: hidden;
+
+		@media @vertical-phone {
+			background: #fff;
+		}
+	}
+	
+	&__button-next, &__button-back {
+		float: left;
+		border-radius: 5em;
+		color: #fff;
+
+		transition: initial;
+
+		&:hover {
+			box-shadow: none;
+		}
+
+		@media @vertical-phone {
+			float: none;
+			display: block;
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+
+	&__button-next {
+		float: right;
+
+		@media @vertical-phone {
+			float: none;
+		}
+	}
+
+	&__button-back {
+		@media @vertical-phone {
+			display: none;
+		}
+	}
+}

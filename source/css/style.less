@@ -1,0 +1,51 @@
+﻿/*** --- Reset CSS --- ***/
+@import (inline) 'reset.less';
+
+
+/*** --- Mixins and variables --- ***/
+@import 'common/variables.less';
+@import 'common/easings.less';
+@import 'common/mixins.less';
+
+
+/*** --- Fonts --- ***/
+// .webfont('Font Name', 'font-file-name');
+// .webfont('Font Name', 'font-file-name', bold, italic);
+@import '../../build/iconfont/iconfont.less';
+
+
+/*** --- Document --- ***/
+html,
+body {
+	height: 100%;
+	background: @bg-color;
+	color: @text-color;
+	font: normal @font-size/@line-height @font-family;
+	-webkit-text-size-adjust: 100%;
+	.smooth-font;
+}
+
+
+/*** --- Links --- ***/
+a {
+	color: @link-color;
+	text-decoration: none;
+}
+
+
+/*** --- Blocks --- ***/
+@import 'blocks/page.less';
+@import "blocks/button";
+@import "blocks/content";
+@import "blocks/form";
+@import "blocks/header";
+@import "blocks/progress";
+@import "blocks/sidebar";
+@import "blocks/switch";
+@import "blocks/typography";
+@import "blocks/menu";
+@import "blocks/progress-bar";
+@import "blocks/ui-block";
+@import "blocks/rating";
+@import "blocks/select";
+@import "blocks/header-menu-button";

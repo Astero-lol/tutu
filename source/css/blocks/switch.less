@@ -1,0 +1,28 @@
+.switch {
+
+	&__input {
+		display: none;
+
+		&:checked + .switch__label {
+			padding: .3em .6em;
+			margin: 0 -.2em;
+
+			color: #fff;
+			background-color: @green;
+			border-radius: 5px;
+			border-bottom: transparent;
+		}
+	}
+	
+	&__label {
+		display: inline-block;
+		padding: .3em .1em;
+		margin: 0 .6em;
+
+		line-height: 1;
+		border-bottom: 1px dotted;
+		cursor: pointer;
+
+		text-align: center;
+	}
+}

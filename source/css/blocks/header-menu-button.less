@@ -1,0 +1,67 @@
+.header-menu-button {
+
+	@font-size: 16px;
+
+	& {
+		display: none;
+		position: absolute;
+		right: 0;
+		z-index: 10;
+
+		text-align: center;
+		overflow: hidden;
+		text-transform: uppercase;
+		font-size: @font-size;
+		line-height: 1;
+	}
+
+	@media @phone {
+		display: block;
+	}
+
+	@icon-width: 40px;
+	@icon-height: 24px;
+	@line-height: 2px;
+
+	&__icon {
+		position: relative;
+		size: @icon-width @icon-height;
+	}
+
+	&__line {
+		& {
+			position: absolute;
+			left: 0;
+			size: 100% @line-height;
+			background: @green;
+			transition: opacity @duration, transform @duration;
+		}
+		&_1 {
+			top: 0;
+		}
+		&_2 {
+			top: 50%;
+			margin-top: -@line-height/2;
+		}
+		&_3 {
+			bottom: 0;
+		}
+	}
+
+	&_active &__line {
+		&_1 {
+			transform: translateY(10px) rotate(45deg);
+		}
+		&_2 {
+			opacity: 0;
+		}
+		&_3 {
+			transform: translateY(-10px) rotate(-45deg);
+		}
+	}
+
+	&__text {
+		float: left;
+		min-width: 3.3em;
+	}
+}

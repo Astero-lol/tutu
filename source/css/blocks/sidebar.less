@@ -1,0 +1,24 @@
+.sidebar {
+	float: left;
+	width: @sidebarSize;
+	margin-right: @sidebarOffset;
+
+	box-sizing: border-box;
+
+	@media @tablet {
+		float: none;
+		width: 80%;
+	}
+
+	@media @phone {
+		width: 100%;
+	}
+
+	&__text {
+		font-size: 13px;
+
+		@media @tablet {
+			font-size: 14px;
+		}
+	}
+}

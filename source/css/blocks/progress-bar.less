@@ -1,0 +1,35 @@
+.progress-bar {
+	@shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.2) inset;
+	@greenBg: linear-gradient(0deg, rgba(89,184,26,0.61) 0, rgba(89,184,26,0.61) 1%, #c3f793 3%, rgba(89,184,26,0.8) 28%, #59b81a 51%, rgba(89,184,26,0.8) 63%, #c3f793 94%, #c3f793 100%);
+
+	position: relative;
+
+	width: 200px;
+	height: 16px;
+
+	line-height: 15px;
+
+	text-align: center;
+	border-radius: 20px;
+
+	box-shadow: @shadow;
+	overflow: hidden;
+
+	&__value {
+		position: relative;
+		display: inline-block;
+		font-size: 10px;
+	}
+
+	&__line {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 20%;
+		height: 100%;
+
+		background: @greenBg;
+		border-radius: 20px;
+	}
+}
