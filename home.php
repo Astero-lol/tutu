@@ -29,11 +29,11 @@
 			<div class="progress">
 				<h3 class="progress__title title">Заполните форму</h3>
 				<ul class="progress__list">
-					<li class="progress__item progress__item_active">1</li>
-					<li class="progress__item progress__item_active">2</li>
-					<li class="progress__item progress__item_active">3</li>
-					<li class="progress__item">4</li>
-					<li class="progress__item">5</li>
+					<li class="progress__item progress__item_ligth">5</li>
+					<li class="progress__item progress__item_ligth">4</li>
+					<li class="progress__item progress__item_ligth">3</li>
+					<li class="progress__item">2</li>
+					<li class="progress__item">1</li>
 				</ul>
 			</div>
 			<p class="content__line"><span class="content__line-title">Общая информация</span></p>

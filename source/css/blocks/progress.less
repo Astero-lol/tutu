@@ -33,12 +33,15 @@
 	}
 
 	&__item {
-		float: left;
+		@greenBg: linear-gradient(180deg, #2c6b26 0%, #3c9f25 23%, #3c9f25 43%, #40ac28 100%);
+		@lighGreenBg:linear-gradient(180deg, #96c327 0%, #98c627 23%, #a6d72c 43%, #bde152 100%);
+
+		float: right;
 		width: calc(~"100%/5 - 1px");
 
 		height: 20px;
 		background: #f7f7f7;
-		box-shadow: 0 2px 3px 0 rgba(0,0,0, 0.3) inset;
+		box-shadow: 0 2px 6px 0 rgba(0,0,0, 0.3) inset;
 		color: @note-color;
 
 		margin-right: 1px;
@@ -46,12 +49,20 @@
 
 		&_active {
 			color: #fff;
-			background: linear-gradient(180deg, #2c6b26 0%, #3c9f25 23%, #3c9f25 43%, #40ac28 100%);
 			background-position: 50% 50%;
-			
-			&:nth-of-type(3n+3) {
-				background: linear-gradient(180deg, #96c327 0%, #98c627 23%, #a6d72c 43%, #bde152 100%);
-				background-position: 50% 50%;
+			background: @greenBg;
+
+			& ~ .progress__item {
+				background: @greenBg;
+				color: #fff;
+			}
+
+			& ~ .progress__item_ligth {
+				background: @lighGreenBg;
+			}
+
+			&.progress__item_ligth {
+				background: @lighGreenBg;
 			}
 		}
 	}

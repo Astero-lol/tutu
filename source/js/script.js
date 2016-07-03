@@ -1,6 +1,7 @@
 $(function(){
 
 	app.dom.$root.plugins([
-		'mobile-menu'
+		'mobile-menu',
+		'form'
 	]);
 });
