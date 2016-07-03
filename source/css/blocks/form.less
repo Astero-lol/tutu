@@ -75,8 +75,13 @@
 	}
 
 	&__title {
+		line-height: 1;
 		font-weight: bold;
-		margin-bottom: 5px;
+		margin-bottom: 1em;
+
+		@media @tablet {
+			font-size: 15px;
+		}
 	}
 
 	&__field {
@@ -92,7 +97,13 @@
 		box-sizing: border-box;
 		outline: none;
 		box-shadow: none;
+		border-radius: 0;
 		border: 1px solid @border-color;
+
+		@media @tablet {
+			height: 40px;
+			font-size: 18px;
+		}
 	}
 	
 	&__footer {
@@ -103,6 +114,7 @@
 
 		@media @vertical-phone {
 			background: #fff;
+			padding-bottom: 50px;
 		}
 	}
 	
