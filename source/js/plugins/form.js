@@ -31,6 +31,5 @@ app.plugins.register('form', function () {
 		}
 
 	});
-
-
+	
 });

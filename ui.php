@@ -11,7 +11,7 @@
 			<ul class="rating">
 				<li class="rating__item">&#9733;</li>
 				<li class="rating__item">&#9733;</li>
-				<li class="rating__item rating__item_active">&#9733;</li>
+				<li class="rating__item">&#9733;</li>
 				<li class="rating__item">&#9733;</li>
 				<li class="rating__item">&#9733;</li>
 			</ul>
